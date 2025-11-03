@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Android-13.0%2B-brightgreen.svg" alt="Android 5"/>
   <img src="https://img.shields.io/badge/targetSdk-36-green" alt="targetSdk"/>
   <img src="https://img.shields.io/badge/🚀-Feature-purple" alt="Feature"/>
-  <img src="https://jitpack.io/v/QmDeve/AndroidLiquidGlassView.svg" alt="Jitpack"/>
+  <img src="https://img.shields.io/maven-central/v/io.github.qmdeve/AndroidLiquidGlassView" alt="Jitpack"/>
   <img src="https://img.shields.io/github/stars/QmDeve/AndroidLiquidGlassView" alt="Stars"/>
 
 <br>
@@ -48,23 +48,11 @@
 
 
 ## Quick integration
-### 1. Add Maven：
-**Add the following to `settings.gradle` in the project root directory:**
-```gradle
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-       mavenCentral()
-       maven { url 'https://jitpack.io' }
-  }
-}
-```
-
-### 2. Add Dependencies：
+### Add Dependencies：
 **Add the following to the module's `build.gradle`:**
 ```gradle
 dependencies {
-   implementation 'com.github.QmDeve:AndroidLiquidGlassView:v0.0.1-alpha04'
+   implementation 'io.github.qmdeve:AndroidLiquidGlassView:0.0.1-alpha05'
 }
 ```
 
