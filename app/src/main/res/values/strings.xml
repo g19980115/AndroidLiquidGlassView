@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AndroidLiquidGlassView</string>
+    <string name="app_name" translatable="false">AndroidLiquidGlassView</string>
     <string name="blur_radius">Blur Radius</string>
     <string name="offset">Refraction Offset</string>
     <string name="refraction">Refraction Height</string>
