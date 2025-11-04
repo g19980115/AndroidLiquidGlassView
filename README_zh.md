@@ -48,7 +48,7 @@
 ---
 
 ## 快速集成
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.qmdeve/AndroidLiquidGlassView)](https://central.sonatype.com/artifact/io.github.qmdeve/AndroidLiquidGlassView)
+[![Maven Central](https://img.shields.io/maven-central/v/com.qmdeve/AndroidLiquidGlassView)](https://central.sonatype.com/artifact/com.qmdeve/AndroidLiquidGlassView)
 ### 添加依赖项：
 **将以下依赖项添加到模块的`build.gradle`中:**
 ```gradle

@@ -48,7 +48,7 @@ English | [简体中文](https://github.com/QmDeve/AndroidLiquidGlassView/blob/m
 ---
 
 ## Quick integration
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.qmdeve/AndroidLiquidGlassView)](https://central.sonatype.com/artifact/io.github.qmdeve/AndroidLiquidGlassView)
+[![Maven Central](https://img.shields.io/maven-central/v/com.qmdeve/AndroidLiquidGlassView)](https://central.sonatype.com/artifact/com.qmdeve/AndroidLiquidGlassView)
 ### Add Dependencies：
 **Add the following to the module's `build.gradle`:**
 ```gradle
