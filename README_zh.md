@@ -147,3 +147,11 @@ liquidGlassView.bind(content);
 
 ### 我的其他开源库
 - **[QmBlurView](https://github.com/QmDeve/QmBlurView)**
+
+---
+
+### 赞助我们
+
+**如果您觉得我们的项目对您有帮助，欢迎通过以下方式赞助支持：**
+
+![赞助二维码](https://youke1.picui.cn/s1/2025/11/04/6909d2ae165f0.png)
