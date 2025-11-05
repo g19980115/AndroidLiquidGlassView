@@ -20,11 +20,13 @@
 
 package com.qmdeve.liquidglass;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Outline;
 import android.os.Build;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.ViewOutlineProvider;
 import android.view.ViewTreeObserver;
 import android.widget.FrameLayout;
@@ -36,9 +38,10 @@ import com.qmdeve.liquidglass.impl.LiquidGlassimpl;
 
 import java.lang.ref.WeakReference;
 
+@SuppressLint("ViewConstructor")
 public class LiquidGlass extends FrameLayout {
     private Impl impl;
-    private View target;
+    private ViewGroup target;
     private boolean listenerAdded = false;
     private final Config config;
 
@@ -81,7 +84,7 @@ public class LiquidGlass extends FrameLayout {
         init();
     }
 
-    public void init(View target) {
+    public void init(ViewGroup target) {
         if (this.target != null) removePreDrawListener();
 
         this.target = target;
