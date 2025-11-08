@@ -143,11 +143,14 @@ liquidGlassView.bind(content);
 
 [![Star History Chart](https://api.star-history.com/svg?repos=QmDeve/AndroidLiquidGlassView&type=date&legend=bottom-right)](https://www.star-history.com/#QmDeve/AndroidLiquidGlassView&type=date&legend=bottom-right)
 
+## 贡献者
+[![QmDeve](https://images.weserv.nl/?url=https://github.com/QmDeve.png?size=70&mask=circle&dpr=2&w=20&h=20)](https://github.com/QmDeve)
+
 ---
 
 ### 我的其他开源库
 - **[QmBlurView](https://github.com/QmDeve/QmBlurView)**
- - **[QmReflection](https://github.com/QmDeve/QmReflection)**
+- **[QmReflection](https://github.com/QmDeve/QmReflection)**
 
 ---
 
