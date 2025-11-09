@@ -146,6 +146,8 @@ liquidGlassView.bind(content);
 ## Contributors
 [![QmDeve](https://images.weserv.nl/?url=https://github.com/QmDeve.png?size=70&mask=circle&dpr=2&w=20&h=20)](https://github.com/QmDeve)
 
+**We hope to have more contributors to maintain the project together**
+
 ---
 
 ### My other open-source library
