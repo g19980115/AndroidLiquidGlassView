@@ -84,8 +84,7 @@
 ---
 
 ## Star History
-
-[![Star History Chart](https://starchart.cc/QmDeve/AndroidLiquidGlassView.svg)](https://starchart.cc/QmDeve/AndroidLiquidGlassView.svg)
+[![Star History](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView.svg?variant=adaptive)](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView)
 
 ## 贡献者
 

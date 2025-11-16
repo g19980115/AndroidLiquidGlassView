@@ -85,8 +85,7 @@ English | [简体中文](https://github.com/QmDeve/AndroidLiquidGlassView/blob/m
 ---
 
 ## Star History
-
-[![Star History Chart](https://starchart.cc/QmDeve/AndroidLiquidGlassView.svg)](https://starchart.cc/QmDeve/AndroidLiquidGlassView.svg)
+[![Star History](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView.svg?variant=adaptive)](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView)
 
 ## Contributors
 
