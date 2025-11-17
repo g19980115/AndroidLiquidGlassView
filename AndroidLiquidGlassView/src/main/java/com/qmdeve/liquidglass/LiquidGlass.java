@@ -41,7 +41,7 @@ import java.lang.ref.WeakReference;
 @SuppressLint("ViewConstructor")
 public class LiquidGlass extends FrameLayout {
     private Impl impl;
-    private ViewGroup target;
+    private View target;
     private boolean listenerAdded = false;
     private final Config config;
 
@@ -84,7 +84,7 @@ public class LiquidGlass extends FrameLayout {
         init();
     }
 
-    public void init(ViewGroup target) {
+    public void init(View target) {
         if (this.target != null) removePreDrawListener();
 
         this.target = target;
