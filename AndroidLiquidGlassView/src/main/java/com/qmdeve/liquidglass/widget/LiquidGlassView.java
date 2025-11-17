@@ -23,6 +23,7 @@ package com.qmdeve.liquidglass.widget;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
@@ -36,7 +37,7 @@ import com.qmdeve.liquidglass.util.Utils;
 public class LiquidGlassView extends FrameLayout {
 
     private LiquidGlass glass;
-    private ViewGroup customSource;
+    private View customSource;
     private final Context context;
     private float cornerRadius = Utils.dp2px(getResources(), 40), refractionHeight = Utils.dp2px(getResources(), 20), refractionOffset = -Utils.dp2px(getResources(), 70), tintAlpha = 0.0f, tintColorRed = 1.0f, tintColorGreen = 1.0f, tintColorBlue = 1.0f, blurRadius = 0.01f, dispersion = 0.5f, downX, downY, startTx, startTy;
     private boolean draggableEnabled = false;
@@ -76,7 +77,7 @@ public class LiquidGlassView extends FrameLayout {
      *
      * @param source ViewGroup
      */
-    public void bind(ViewGroup source) {
+    public void bind(View source) {
         this.customSource = source;
         if (glass != null && source != null) {
             glass.init(source);
@@ -366,7 +367,7 @@ public class LiquidGlassView extends FrameLayout {
         );
         addView(glass, lp);
 
-        ViewGroup source = customSource;
+        View source = customSource;
         if (source == null && getParent() instanceof ViewGroup) {
             return;
         }
