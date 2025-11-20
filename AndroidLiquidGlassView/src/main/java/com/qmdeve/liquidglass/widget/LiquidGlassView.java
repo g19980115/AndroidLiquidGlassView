@@ -114,6 +114,10 @@ public class LiquidGlassView extends FrameLayout {
         updateConfig();
     }
 
+    public void setCornerRadiusBeforeBind(float px) {
+        this.cornerRadius = px;
+    }
+
     /**
      * @Deprecated Please use the {@link #setRefractionHeight} method
      */
