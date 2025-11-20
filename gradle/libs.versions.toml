@@ -1,7 +1,7 @@
 [versions]
 agp = "8.7.0"
-appcompat = "1.7.1"
-material = "1.14.0-alpha06"
+appcompat = "1.6.1"
+material = "1.12.0"
 annotationJvm = "1.9.1"
 qmblurview = "1.0.4.5-Beta1"
 

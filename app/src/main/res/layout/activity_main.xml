@@ -7,36 +7,25 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <com.qmdeve.blurview.widget.BlurButtonView
+    <Button
         android:id="@+id/liquidglassview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Liquid Glass View"
-        android:textColor="@color/white"
-        app:buttonCornerRadius="99dp"
-        app:buttonTextBold="true"
-        app:overlayColor="#0248FB" />
+        android:textColor="@color/white" />
 
-    <com.qmdeve.blurview.widget.BlurButtonView
+    <Button
         android:id="@+id/elasticliquidglassview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Elastic Liquid Glass View"
-        android:textColor="@color/white"
-        app:buttonCornerRadius="99dp"
-        app:buttonTextBold="true"
-        app:overlayColor="#0248FB" />
+        android:textColor="@color/white" />
 
-    <com.qmdeve.blurview.widget.BlurButtonView
+    <Button
         android:id="@+id/github"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:icon="@drawable/ic_github"
         android:text="GitHub"
-        android:textColor="@color/white"
-        app:buttonCornerRadius="99dp"
-        app:buttonIconTint="@color/white"
-        app:buttonTextBold="true"
-        app:overlayColor="#0248FB"
-        app:buttonIconSize="20dp"/>
+        android:textColor="@color/white"/>
 </LinearLayout>
