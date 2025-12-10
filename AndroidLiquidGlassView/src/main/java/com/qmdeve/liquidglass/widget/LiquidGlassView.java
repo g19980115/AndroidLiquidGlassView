@@ -47,7 +47,7 @@ public class LiquidGlassView extends ViewGroup {
     private View customSource;
     private final Context context;
     private float cornerRadius = Utils.dp2px(getResources(), 40), refractionHeight = Utils.dp2px(getResources(), 20), refractionOffset = -Utils.dp2px(getResources(), 70), tintAlpha = 0.0f, tintColorRed = 1.0f, tintColorGreen = 1.0f, tintColorBlue = 1.0f, blurRadius = 0.01f, dispersion = 0.5f, downX, downY, startTx, startTy;
-    private boolean fixRadiusEnable = true;
+    private float originalCornerRadius = cornerRadius;
     private boolean draggableEnabled = false;
     private boolean elasticEnabled = false;
     private boolean touchEffectEnabled = false;
@@ -156,15 +156,13 @@ public class LiquidGlassView extends ViewGroup {
     public void setCornerRadius(float px) {
         float maxPx = getHeight() > 0 ? getHeight() / 2f : Utils.dp2px(getResources(), 99);
         this.cornerRadius = Math.max(0, Math.min(px, maxPx));
+        this.originalCornerRadius = cornerRadius;
         updateConfig();
     }
 
     public void setCornerRadiusBeforeBind(float px) {
         this.cornerRadius = px;
-    }
-
-    public void setFixRadiusEnable(boolean fixRadiusEnable) {
-        this.fixRadiusEnable = fixRadiusEnable;
+        this.originalCornerRadius = cornerRadius;
     }
 
     /**
@@ -279,6 +277,7 @@ public class LiquidGlassView extends ViewGroup {
 
     /**
      * Set whether the touch effect (iOS style press animation) is enabled
+     *
      * @param enabled boolean
      */
     public void setTouchEffectEnabled(boolean enabled) {
@@ -329,9 +328,7 @@ public class LiquidGlassView extends ViewGroup {
         if (w != oldw || h != oldh) {
             if (w > 0 && h > 0) {
                 float maxPx = h / 2f;
-                if (cornerRadius > maxPx && fixRadiusEnable) {
-                    cornerRadius = maxPx;
-                }
+                cornerRadius = Math.min(originalCornerRadius, maxPx);
                 rebuild();
             }
         }
