@@ -15,7 +15,9 @@
 
   <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT"/>
   <img src="https://img.shields.io/badge/Android-13.0%2B-brightgreen.svg" alt="Android 13"/>
-  [![](https://jitpack.io/v/g19980115/AndroidLiquidGlassView.svg)](https://jitpack.io/#g19980115/AndroidLiquidGlassView)
+  <img src="https://img.shields.io/badge/Android-13.0%2B-brightgreen.svg" alt="Android 13"/>
+
+[![](https://jitpack.io/v/g19980115/AndroidLiquidGlassView.svg)](https://jitpack.io/#g19980115/AndroidLiquidGlassView)
 
 
 <br>
