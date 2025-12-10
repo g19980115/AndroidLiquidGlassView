@@ -40,6 +40,7 @@ public class LiquidGlassView extends FrameLayout {
     private View customSource;
     private final Context context;
     private float cornerRadius = Utils.dp2px(getResources(), 40), refractionHeight = Utils.dp2px(getResources(), 20), refractionOffset = -Utils.dp2px(getResources(), 70), tintAlpha = 0.0f, tintColorRed = 1.0f, tintColorGreen = 1.0f, tintColorBlue = 1.0f, blurRadius = 0.01f, dispersion = 0.5f, downX, downY, startTx, startTy;
+    private boolean fixRadiusEnable = true;
     private boolean draggableEnabled = false;
     private boolean elasticEnabled = false;
     private Config config;
@@ -116,6 +117,10 @@ public class LiquidGlassView extends FrameLayout {
 
     public void setCornerRadiusBeforeBind(float px) {
         this.cornerRadius = px;
+    }
+
+    public void setFixRadiusEnable(boolean fixRadiusEnable) {
+        this.fixRadiusEnable = fixRadiusEnable;
     }
 
     /**
@@ -271,6 +276,7 @@ public class LiquidGlassView extends FrameLayout {
 
     /**
      * Set whether elastic effect is needed or not
+     *
      * @param enabled boolean
      */
     public void setElasticEnabled(boolean enabled) {
@@ -324,7 +330,7 @@ public class LiquidGlassView extends FrameLayout {
         if (w != oldw || h != oldh) {
             if (w > 0 && h > 0) {
                 float maxPx = h / 2f;
-                if (cornerRadius > maxPx) {
+                if (cornerRadius > maxPx && fixRadiusEnable) {
                     cornerRadius = maxPx;
                 }
                 rebuild();
