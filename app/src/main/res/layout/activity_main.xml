@@ -20,6 +20,13 @@
         android:layout_height="wrap_content"
         android:text="Elastic Liquid Glass View"
         android:textColor="@color/white" />
+    <Button
+        android:id="@+id/toucheffectview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Touch Effect View"
+        android:textColor="@color/white" />
+
 
     <Button
         android:id="@+id/github"

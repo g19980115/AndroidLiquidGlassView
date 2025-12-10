@@ -94,10 +94,11 @@ public class LiquidTracker {
         float velocityY = velocityTracker.getYVelocity();
         float velocity = (float)Math.sqrt(velocityX * velocityX + velocityY * velocityY);
 
-        return new float[] {
-                Math.clamp(1f + velocity * 0.5f, 0.6f, 1.4f),
-                Math.clamp(1f - velocity * 0.5f, 0.6f, 1.4f)
-        };
+        float scaleX = Math.min(Math.max(1f + velocity * 0.5f, 0.6f), 1.4f);
+        float scaleY = Math.min(Math.max(1f - velocity * 0.5f, 0.6f), 1.4f);
+
+        return new float[] { scaleX, scaleY };
+
     }
 
     private void ensureAddMovement(MotionEvent e) {
