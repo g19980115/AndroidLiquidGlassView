@@ -15,10 +15,9 @@
 [![Telegram](https://img.shields.io/badge/Telegram%20Group-QmDeves-blue.svg?logo=telegram)](https://t.me/QmDeves)
 [![QQ Group](https://img.shields.io/badge/QQ%20Group-1046829337-blue.svg?logo=qq)](https://qm.qq.com/q/OEVn8ZslMq)
 
-  <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="Apache"/>
-  <img src="https://img.shields.io/badge/Android-13.0%2B-brightgreen.svg" alt="Android 5"/>
-  <img src="https://img.shields.io/badge/targetSdk-36-green" alt="targetSdk"/>
-  <img src="https://img.shields.io/maven-central/v/com.qmdeve/AndroidLiquidGlassView" alt="maven"/>
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT"/>
+  <img src="https://img.shields.io/badge/Android-13.0%2B-brightgreen.svg" alt="Android 12"/>
+  <img src="https://img.shields.io/maven-central/v/com.qmdeve.liquidglass/core?label=Latest%20Version" alt="maven"/>
   
 <br>
 <br>
@@ -29,7 +28,7 @@
 
 ---
 
-> **Note: 镜像存储库**
+> **Note: 存储库**
 >
 > 该项目在多个平台上维护，以方便不同地区的开发人员使用。所有仓库的内容都应保持一致
 > - **主存储库**：[GitHub](https://github.com/QmDeve/AndroidLiquidGlassView)
@@ -44,26 +43,31 @@
 - **`液态玻璃`效果 - 真实的折射与色散效果**
 - **高度可定制 - 支持调整圆角半径、折射高度、折射偏移、色散参数、模糊半径、色调等**
 - **基于物理且真实的弹性效果**
----
 
 ## 要求
 - **Android API 33 +（Android 13），以获得完整的玻璃效果**
 
----
+## 预览
 
-## 截图
-
-<img src="./img/image.png" alt="Stars"/>
-
----
+<img src="./img/img1.jpg" alt="Image"/>
 
 ## Demo 演示
 [下载 Demo](https://github.com/QmDeve/AndroidLiquidGlassView/blob/master/app/release/app-release.apk)
 
----
+# 开始使用
+### 快速集成
+
+<img src="https://img.shields.io/maven-central/v/com.qmdeve.liquidglass/core?label=Latest%20Version" alt="maven"/>
+
+**在 `build.gradle` 文件的 `dependencies{}` 块中添加依赖项**
+```gradle
+dependencies {
+   implementation 'com.qmdeve.liquidglass:core:<version>'
+}
+```
 
 ## 如何使用
-**请查看文档：[Docs](https://glass.docs.qmdeve.com/zh/)**
+**请查看文档：[https://liquidglass.qmdeve.com/](https://liquidglass.qmdeve.com/zh/)**
 
 ---
 
@@ -76,32 +80,41 @@
 
 **在`Android 13`以下的设备上，View将保持透明的背景，不会呈现任何效果**
 
-## 注意事项
-**1.`采样源`：** 确保绑定采样源视图包含有效内容
-
-**2.`兼容性`：** 仅在`Android 13+`上渲染完整效果
-
----
-
 ## Star History
 [![Star History](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView.svg?variant=adaptive)](https://starchart.qmdeve.com/QmDeve/AndroidLiquidGlassView)
 
-## 贡献者
+## 我的开源项目
+ - **[QmBlurView](https://github.com/QmDeve/QmBlurView)**
+ - **[QmReflection](https://github.com/QmDeve/QmReflection)**
+ - **[Qm Authenticator for Android](https://github.com/Rouneant/Qm-Authenticator-for-Android)**
 
-<a href="https://github.com/QmDeve/AndroidLiquidGlassView/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=QmDeve/AndroidLiquidGlassView"  alt="Contributors"/>
-</a>
-
----
-
-### 我的其他开源库
-- **[QmBlurView](https://github.com/QmDeve/QmBlurView)**
-- **[QmReflection](https://github.com/QmDeve/QmReflection)**
-
----
-
-### 赞助我们
+## 赞助我们
 
 **如果您觉得我们的项目对您有帮助，欢迎通过以下方式赞助支持：**
 
 ![赞助二维码](https://youke1.picui.cn/s1/2025/11/04/6909d2ae165f0.png)
+
+---
+
+## License
+```
+Copyright ©️ 2025 QmDeve
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
